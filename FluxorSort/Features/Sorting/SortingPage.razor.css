@@ -1,0 +1,6 @@
+
+.button-header{
+    display: flex;
+    gap: 5px; /* Adds space between columns */
+    margin: 10px;
+}

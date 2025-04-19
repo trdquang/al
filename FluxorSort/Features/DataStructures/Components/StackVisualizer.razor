@@ -1,0 +1,97 @@
+﻿@using FluxorSort.Features.DataStructures.Store
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+<div class="stack-visualizer">
+    <div class="stack-container">
+        @if (Elements.Count == 0)
+        {
+            <div class="empty-message">Stack rỗng</div>
+        }
+        else
+        {
+            @for (int i = Elements.Count - 1; i >= 0; i--)
+            {
+                var element = Elements[i];
+                var isCurrentElement = CurrentElement.HasValue && CurrentElement.Value == element && CurrentPosition.HasValue && CurrentPosition.Value == i;
+                var animationClass = isCurrentElement ? "element-highlight" : "";
+
+                <div class="stack-element @animationClass">
+                    <div class="element-value">@element</div>
+                    @if (i == Elements.Count - 1)
+                    {
+                        <div class="element-label">Top</div>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<int> Elements { get; set; } = new();
+
+    [Parameter]
+    public int? CurrentElement { get; set; }
+
+    [Parameter]
+    public int? CurrentPosition { get; set; }
+}
+
+<style>
+    .stack-visualizer {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .stack-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #f8f9fa;
+    }
+
+    .stack-element {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #e9ecef;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .element-highlight {
+        background-color: #ffc107;
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .element-value {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .element-label {
+        font-size: 0.8rem;
+        color: #6c757d;
+        background-color: #e2e3e5;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+
+    .empty-message {
+        padding: 20px;
+        color: #6c757d;
+        font-style: italic;
+    }
+</style>

@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FluxorSort
+build_property.RootNamespace = FluxorSort
+build_property.ProjectDir = E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/BinaryTreeBinary/BinaryTreee.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQmluYXJ5VHJlZUJpbmFyeVxCaW5hcnlUcmVlZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/Counter/CounterPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291bnRlclxDb3VudGVyUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/DataStructures/Components/DataStructureOperations.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGF0YVN0cnVjdHVyZXNcQ29tcG9uZW50c1xEYXRhU3RydWN0dXJlT3BlcmF0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/DataStructures/Components/DataStructureSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGF0YVN0cnVjdHVyZXNcQ29tcG9uZW50c1xEYXRhU3RydWN0dXJlU2VsZWN0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/DataStructures/Components/ListVisualizer.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGF0YVN0cnVjdHVyZXNcQ29tcG9uZW50c1xMaXN0VmlzdWFsaXplci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/DataStructures/Components/QueueVisualizer.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGF0YVN0cnVjdHVyZXNcQ29tcG9uZW50c1xRdWV1ZVZpc3VhbGl6ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/DataStructures/Components/StackVisualizer.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGF0YVN0cnVjdHVyZXNcQ29tcG9uZW50c1xTdGFja1Zpc3VhbGl6ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/DataStructures/DataStructuresPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcRGF0YVN0cnVjdHVyZXNcRGF0YVN0cnVjdHVyZXNQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/GraphAlg/CayKhung.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR3JhcGhBbGdcQ2F5S2h1bmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/GraphAlg/DuongDi.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR3JhcGhBbGdcRHVvbmdEaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/GraphAlg/DuyetDoThi.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcR3JhcGhBbGdcRHV5ZXREb1RoaS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/Hash/HashTable.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcSGFzaFxIYXNoVGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/Sorting/Components/SorterSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU29ydGluZ1xDb21wb25lbnRzXFNvcnRlclNlbGVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-dhphhfafrw
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1msiiba5te
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/Sorting/Components/SortingArray.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU29ydGluZ1xDb21wb25lbnRzXFNvcnRpbmdBcnJheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-razyet2jpj
+
+[E:/zzz_coding/prj_asp_algorithm/FluxorSort-20250418T040535Z-001/FluxorSort/Features/Sorting/SortingPage.Razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU29ydGluZ1xTb3J0aW5nUGFnZS5SYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zce2o7zpm1

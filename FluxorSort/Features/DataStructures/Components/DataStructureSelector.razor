@@ -1,0 +1,29 @@
+﻿@using FluxorSort.Features.DataStructures.Types
+@using FluxorSort.Features.DataStructures.Store
+@using FluxorSort.Features.DataStructures.Store.Actions
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+<div class="data-structure-selector">
+    <select class="form-select-sm btn-outline-secondary" @onchange="UpdateDataStructureType">
+        @foreach (var option in Enum.GetValues(typeof(DataStructureType)))
+        {
+            <option value="@option" selected="@(option.Equals(DataStructuresState.Value.CurrentType))">@option</option>
+        }
+    </select>
+</div>
+
+@code {
+    [Inject]
+    private IState<DataStructuresState>? DataStructuresState { get; set; }
+
+    [Inject]
+    private IDispatcher Dispatcher { get; set; }
+
+    private void UpdateDataStructureType(ChangeEventArgs e)
+    {
+        if (Enum.TryParse(typeof(DataStructureType), e.Value?.ToString(), out var result))
+        {
+            Dispatcher.Dispatch(new ChangeDataStructureTypeAction((DataStructureType)result));
+        }
+    }
+}

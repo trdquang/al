@@ -1,0 +1,177 @@
+﻿@using FluxorSort.Features.DataStructures.Types
+@using FluxorSort.Features.DataStructures.Store
+@using FluxorSort.Features.DataStructures.Store.Actions
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+<div class="data-structure-operations">
+    <div class="card">
+        <div class="card-header">
+            <h5>Thao tác</h5>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <input type="number" class="form-control" @bind="InputValue" placeholder="Nhập giá trị" />
+            </div>
+
+            @if (DataStructuresState!.Value.CurrentType == DataStructureType.Stack)
+            {
+                <div class="d-flex gap-2 mb-3">
+                    <button class="btn btn-primary" @onclick="Push" disabled="@DataStructuresState.Value.IsOperating">Push</button>
+                    <button class="btn btn-warning" @onclick="Pop" disabled="@DataStructuresState.Value.IsOperating">Pop</button>
+                    <button class="btn btn-info" @onclick="PeekStack" disabled="@DataStructuresState.Value.IsOperating">Peek</button>
+                </div>
+            }
+            else if (DataStructuresState!.Value.CurrentType == DataStructureType.Queue)
+            {
+                <div class="d-flex gap-2 mb-3">
+                    <button class="btn btn-primary" @onclick="Enqueue" disabled="@DataStructuresState.Value.IsOperating">Enqueue</button>
+                    <button class="btn btn-warning" @onclick="Dequeue" disabled="@DataStructuresState.Value.IsOperating">Dequeue</button>
+                    <button class="btn btn-info" @onclick="PeekQueue" disabled="@DataStructuresState.Value.IsOperating">Peek</button>
+                </div>
+            }
+            else if (DataStructuresState!.Value.CurrentType == DataStructureType.List)
+            {
+                <div class="d-flex gap-2 mb-3">
+                    <button class="btn btn-primary" @onclick="Add" disabled="@DataStructuresState.Value.IsOperating">Add</button>
+                    <button class="btn btn-success" @onclick="Insert" disabled="@DataStructuresState.Value.IsOperating">Insert</button>
+                    <button class="btn btn-warning" @onclick="Remove" disabled="@DataStructuresState.Value.IsOperating">Remove</button>
+                    <button class="btn btn-danger" @onclick="RemoveAt" disabled="@DataStructuresState.Value.IsOperating">RemoveAt</button>
+                </div>
+
+                @if (ShowIndexInput)
+                {
+                    <div class="mb-3">
+                        <input type="number" class="form-control" @bind="IndexValue" placeholder="Nhập vị trí" />
+                    </div>
+                }
+            }
+
+            <div class="d-flex gap-2">
+                <button class="btn btn-secondary" @onclick="Reset" disabled="@DataStructuresState!.Value.IsOperating">Reset</button>
+                <button class="btn btn-success" @onclick="GenerateRandom" disabled="@DataStructuresState!.Value.IsOperating">Tạo ngẫu nhiên</button>
+                @if (DataStructuresState!.Value.CurrentType == DataStructureType.List)
+                {
+                    <button class="btn btn-danger" @onclick="Clear" disabled="@DataStructuresState.Value.IsOperating">Clear</button>
+                }
+            </div>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(DataStructuresState!.Value.Message))
+    {
+        <div class="alert alert-info mt-3">
+            @DataStructuresState.Value.Message
+        </div>
+    }
+
+    <div class="card mt-3">
+        <div class="card-header">
+            <h5>Lịch sử thao tác</h5>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                @foreach (var operation in DataStructuresState!.Value.OperationHistory.AsEnumerable().Reverse())
+                {
+                    <li class="list-group-item">@operation</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Inject]
+    private IState<DataStructuresState>? DataStructuresState { get; set; }
+
+    [Inject]
+    private IDispatcher Dispatcher { get; set; }
+
+    private int InputValue { get; set; } = 0;
+    private int IndexValue { get; set; } = 0;
+    private bool ShowIndexInput { get; set; } = false;
+
+    // Stack Operations
+    private void Push()
+    {
+        Dispatcher.Dispatch(new PushAction(InputValue));
+    }
+
+    private void Pop()
+    {
+        Dispatcher.Dispatch(new PopAction());
+    }
+
+    private void PeekStack()
+    {
+        Dispatcher.Dispatch(new PeekStackAction());
+    }
+
+    // Queue Operations
+    private void Enqueue()
+    {
+        Dispatcher.Dispatch(new EnqueueAction(InputValue));
+    }
+
+    private void Dequeue()
+    {
+        Dispatcher.Dispatch(new DequeueAction());
+    }
+
+    private void PeekQueue()
+    {
+        Dispatcher.Dispatch(new PeekQueueAction());
+    }
+
+    // List Operations
+    private void Add()
+    {
+        Dispatcher.Dispatch(new AddAction(InputValue));
+    }
+
+    private void Insert()
+    {
+        ShowIndexInput = true;
+        StateHasChanged();
+
+        // Nếu đã nhập IndexValue, thực hiện Insert
+        if (IndexValue >= 0)
+        {
+            Dispatcher.Dispatch(new InsertAction(InputValue, IndexValue));
+            ShowIndexInput = false;
+        }
+    }
+
+    private void Remove()
+    {
+        Dispatcher.Dispatch(new RemoveAction(InputValue));
+    }
+
+    private void RemoveAt()
+    {
+        ShowIndexInput = true;
+        StateHasChanged();
+
+        // Nếu đã nhập IndexValue, thực hiện RemoveAt
+        if (IndexValue >= 0)
+        {
+            Dispatcher.Dispatch(new RemoveAtAction(IndexValue));
+            ShowIndexInput = false;
+        }
+    }
+
+    private void Clear()
+    {
+        Dispatcher.Dispatch(new ClearAction());
+    }
+
+    // Common Operations
+    private void Reset()
+    {
+        Dispatcher.Dispatch(new ResetDataStructureAction());
+    }
+
+    private void GenerateRandom()
+    {
+        Dispatcher.Dispatch(new GenerateRandomDataAction(5));
+    }
+}

@@ -1,0 +1,20 @@
+.columns-container[b-razyet2jpj] {
+    display: flex;
+    gap: 3px; /* Adds space between columns */
+    align-items: flex-end; /* Aligns columns at the bottom */
+}
+
+.column[b-razyet2jpj] {
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid black;
+    transition: height 0.3s ease;
+}
+
+.column-value[b-razyet2jpj] {
+    color: black;
+    padding: 5px;
+}

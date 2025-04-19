@@ -1,0 +1,94 @@
+﻿@page "/hashtable"
+@{
+    <link href="hash.css" rel="stylesheet" />
+
+}
+@using System.Text
+
+<h2 class="text-center mb-4">Thuật Toán Bảng Băm - Chaining (Không giới hạn số phần tử)</h2>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <input @bind="InputKey" @bind:event="oninput" class="form-control" placeholder="Nhập khóa (ví dụ: abc)" />
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-primary w-100" @onclick="ComputeHash">Chèn Khóa</button>
+    </div>
+</div>
+
+<div id="hashTableContainer" class="d-flex justify-content-center mt-3 flex-wrap">
+    @for (int i = 0; i < HashTableSize; i++)
+    {
+        var filled = Buckets[i].Any() ? "bucket-filled" : "";
+        <div class="bucket @filled">
+            <strong>[@i]</strong><br />
+            @if (Buckets[i].Any())
+            {
+                @foreach (var key in Buckets[i])
+                {
+                    <div>@key</div>
+                }
+            }
+            else
+            {
+                <div>-</div>
+            }
+        </div>
+    }
+</div>
+
+<div class="output mt-3">@Output</div>
+
+<div id="stepsContainer">
+    @foreach (var step in Steps)
+    {
+        <div class="step">@((MarkupString)step)</div>
+    }
+</div>
+
+@code {
+    private const int HashTableSize = 5;
+    private string InputKey { get; set; }
+    private List<string>[] Buckets = Enumerable.Range(0, HashTableSize).Select(_ => new List<string>()).ToArray();
+    private List<string> Steps = new();
+    private string Output = "Chưa thực hiện thao tác nào.";
+
+    private void ComputeHash()
+    {
+        if (string.IsNullOrWhiteSpace(InputKey))
+        {
+            Output = "Vui lòng nhập khóa.";
+            return;
+        }
+
+        string key = InputKey.Trim();
+        Steps.Clear();
+        int hashValue = 0;
+
+        Steps.Add($"<strong>Bước 1:</strong> Khóa = \"{key}\"");
+
+        for (int i = 0; i < key.Length; i++)
+        {
+            int charCode = key[i];
+            hashValue = (hashValue * 31 + charCode) % HashTableSize;
+            Steps.Add($"<strong>Bước {i + 2}:</strong> hash = (hash * 31 + {charCode}) % {HashTableSize} = {hashValue}");
+        }
+
+        int index = Hash(key);
+        Buckets[index].Add(key);
+
+        Steps.Add($"<div class='text-success'>Chèn \"{key}\" vào bucket [{index}].</div>");
+        Output = $"Khóa \"{key}\" được chèn vào bucket [{index}].";
+        InputKey = string.Empty;
+    }
+
+    private int Hash(string key)
+    {
+        int hashValue = 0;
+        foreach (char c in key)
+        {
+            hashValue = (hashValue * 31 + c) % HashTableSize;
+        }
+        return hashValue;
+    }
+}

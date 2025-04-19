@@ -1,0 +1,1052 @@
+{
+  "Version": 1,
+  "Hash": "tD596fyIj6kPYH3oCDntGg0KpVnEApSKZY4yRN8ptVs=",
+  "Source": "FluxorSort",
+  "BasePath": "_content/FluxorSort",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FluxorSort\\wwwroot",
+      "Source": "FluxorSort",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FluxorSort.styles.css",
+      "SourceId": "FluxorSort",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "FluxorSort#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "jcihixxr9t",
+      "Integrity": "3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FluxorSort.styles.css"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FluxorSort.bundle.scp.css",
+      "SourceId": "FluxorSort",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "FluxorSort#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "jcihixxr9t",
+      "Integrity": "3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FluxorSort.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\app.css",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da95v2qkru",
+      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\binary-tree.js",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "binary-tree#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "phyi74ken3",
+      "Integrity": "48k8Di5f+5Kp79rqDFqexj7enQFgv+2AA9OHhUb/tnY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\binary-tree.js"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\duyet.js",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "duyet#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qujmzhah7y",
+      "Integrity": "AtVNNhxwMI0vMgpVIoWVJ+Arx+mhACoY2vchm4VTsK8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\duyet.js"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\favicon.png",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\graph_path.js",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "graph_path#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1j95oseg4c",
+      "Integrity": "fadPQy2houtqz9Q5bjar9MygbwC/7w5wI1JDtLoeHRQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\graph_path.js"
+    },
+    {
+      "Identity": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\hash.css",
+      "SourceId": "FluxorSort",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\",
+      "BasePath": "_content/FluxorSort",
+      "RelativePath": "hash#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ut4nhio2ar",
+      "Integrity": "MrFPqTJP0h86TVJk4VmTO+x4b8je1zUxRs0Y9Sc4hUU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\hash.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "app.da95v2qkru.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da95v2qkru"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
+        }
+      ]
+    },
+    {
+      "Route": "binary-tree.js",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\binary-tree.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"48k8Di5f+5Kp79rqDFqexj7enQFgv+2AA9OHhUb/tnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 06:47:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-48k8Di5f+5Kp79rqDFqexj7enQFgv+2AA9OHhUb/tnY="
+        }
+      ]
+    },
+    {
+      "Route": "binary-tree.phyi74ken3.js",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\binary-tree.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"48k8Di5f+5Kp79rqDFqexj7enQFgv+2AA9OHhUb/tnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 06:47:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phyi74ken3"
+        },
+        {
+          "Name": "label",
+          "Value": "binary-tree.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-48k8Di5f+5Kp79rqDFqexj7enQFgv+2AA9OHhUb/tnY="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "duyet.js",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\duyet.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AtVNNhxwMI0vMgpVIoWVJ+Arx+mhACoY2vchm4VTsK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 10:37:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AtVNNhxwMI0vMgpVIoWVJ+Arx+mhACoY2vchm4VTsK8="
+        }
+      ]
+    },
+    {
+      "Route": "duyet.qujmzhah7y.js",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\duyet.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AtVNNhxwMI0vMgpVIoWVJ+Arx+mhACoY2vchm4VTsK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 10:37:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qujmzhah7y"
+        },
+        {
+          "Name": "label",
+          "Value": "duyet.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AtVNNhxwMI0vMgpVIoWVJ+Arx+mhACoY2vchm4VTsK8="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "FluxorSort.bundle.scp.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FluxorSort.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6653"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk="
+        }
+      ]
+    },
+    {
+      "Route": "FluxorSort.jcihixxr9t.bundle.scp.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FluxorSort.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6653"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcihixxr9t"
+        },
+        {
+          "Name": "label",
+          "Value": "FluxorSort.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk="
+        }
+      ]
+    },
+    {
+      "Route": "FluxorSort.jcihixxr9t.styles.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FluxorSort.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6653"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcihixxr9t"
+        },
+        {
+          "Name": "label",
+          "Value": "FluxorSort.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk="
+        }
+      ]
+    },
+    {
+      "Route": "FluxorSort.styles.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FluxorSort.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6653"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Apr 2025 04:05:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3UI465Fvz5bzwtkeUuxpL9p1fMAXCVm58LMGIFkQWwk="
+        }
+      ]
+    },
+    {
+      "Route": "graph_path.1j95oseg4c.js",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\graph_path.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fadPQy2houtqz9Q5bjar9MygbwC/7w5wI1JDtLoeHRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 09:35:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1j95oseg4c"
+        },
+        {
+          "Name": "label",
+          "Value": "graph_path.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fadPQy2houtqz9Q5bjar9MygbwC/7w5wI1JDtLoeHRQ="
+        }
+      ]
+    },
+    {
+      "Route": "graph_path.js",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\graph_path.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fadPQy2houtqz9Q5bjar9MygbwC/7w5wI1JDtLoeHRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 09:35:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fadPQy2houtqz9Q5bjar9MygbwC/7w5wI1JDtLoeHRQ="
+        }
+      ]
+    },
+    {
+      "Route": "hash.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\hash.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "516"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MrFPqTJP0h86TVJk4VmTO+x4b8je1zUxRs0Y9Sc4hUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 05:50:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MrFPqTJP0h86TVJk4VmTO+x4b8je1zUxRs0Y9Sc4hUU="
+        }
+      ]
+    },
+    {
+      "Route": "hash.ut4nhio2ar.css",
+      "AssetFile": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\hash.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "516"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MrFPqTJP0h86TVJk4VmTO+x4b8je1zUxRs0Y9Sc4hUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 05:50:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ut4nhio2ar"
+        },
+        {
+          "Name": "label",
+          "Value": "hash.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MrFPqTJP0h86TVJk4VmTO+x4b8je1zUxRs0Y9Sc4hUU="
+        }
+      ]
+    }
+  ]
+}

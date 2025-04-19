@@ -1,0 +1,383 @@
+﻿@page "/binary-search-tree"
+@using System.Threading.Tasks
+
+<head>
+    <style>
+        #graphContainer {
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .output {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Demo Cây Nhị Phân Tìm Kiếm</h2>
+
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="number" @bind="InsertValue" class="form-control" placeholder="Nhập giá trị để chèn">
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary w-100" @onclick="InsertValueAsync">Chèn giá trị</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-warning w-100" @onclick="GenerateRandomTree">Random Tree</button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <input type="number" @bind="DeleteValue" class="form-control" placeholder="Nhập giá trị để xóa">
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-danger w-100" @onclick="DeleteValueAsync">Xóa giá trị</button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <input type="number" @bind="SearchValue" class="form-control" placeholder="Nhập giá trị để tìm kiếm">
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-info w-100" @onclick="SearchValueAsync">Tìm kiếm giá trị</button>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <button class="btn btn-secondary w-100" @onclick="InOrderTraversalAsync">Duyệt trung thứ tự</button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-success w-100" @onclick="CheckBalanceAsync">Kiểm tra cân bằng</button>
+        </div>
+    </div>
+
+    <div id="graphContainer"></div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5>Kết quả:</h5>
+            <p id="output" class="output">@OutputMessage</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int? InsertValue { get; set; }
+    private int? DeleteValue { get; set; }
+    private int? SearchValue { get; set; }
+    private string OutputMessage { get; set; } = "Chưa thực hiện thao tác nào.";
+    private bool _initialized = false;
+
+    private class TreeNode
+    {
+        public int Value { get; set; }
+        public TreeNode Left { get; set; }
+        public TreeNode Right { get; set; }
+
+        public TreeNode(int value)
+        {
+            Value = value;
+            Left = null;
+            Right = null;
+        }
+    }
+
+    private TreeNode root = null;
+    private Random random = new Random();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("eval", @"
+                let nodes, edges, network;
+
+                function initNetwork() {
+                    nodes = new vis.DataSet();
+                    edges = new vis.DataSet();
+                    const container = document.getElementById('graphContainer');
+                    const data = { nodes: nodes, edges: edges };
+                    const options = {
+                        layout: {
+                            hierarchical: {
+                                direction: 'UD',
+                                sortMethod: 'directed',
+                                nodeSpacing: 100,
+                                levelSeparation: 100
+                            }
+                        },
+                        nodes: {
+                            shape: 'circle',
+                            size: 30,
+                            color: '#0d6efd',
+                            font: { color: '#fff', size: 16, bold: true }
+                        },
+                        edges: {
+                            arrows: { to: { enabled: false } },
+                            color: '#999'
+                        },
+                        physics: false
+                    };
+                    network = new vis.Network(container, data, options);
+                }
+
+                function clearNetwork() {
+                    if (!nodes || !edges) {
+                        initNetwork();
+                    } else {
+                        nodes.clear();
+                        edges.clear();
+                    }
+                }
+
+                function addNode(id) {
+                    nodes.add({ id: id, label: id.toString() });
+                }
+
+                function addEdge(from, to) {
+                    edges.add({ from: from, to: to });
+                }
+
+                function renderNetwork() {
+                    if (!network) {
+                        initNetwork();
+                    }
+                }
+
+                function highlightNode(id, color) {
+                    nodes.update({ id: id, color: { background: color } });
+                }
+
+                function resetNodeColors() {
+                    nodes.forEach(node => {
+                        nodes.update({ id: node.id, color: { background: '#0d6efd' } });
+                    });
+                }
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    if (typeof vis === 'undefined') {
+                        const script = document.createElement('script');
+                        script.src = 'https://unpkg.com/vis-network/standalone/umd/vis-network.min.js';
+                        script.onload = initNetwork;
+                        document.head.appendChild(script);
+                    } else {
+                        initNetwork();
+                    }
+                });
+            ");
+
+            _initialized = true;
+            await GenerateRandomTree();
+        }
+    }
+
+    private async Task InsertValueAsync()
+    {
+        if (InsertValue == null)
+        {
+            await ShowAlert("Vui lòng nhập số hợp lệ");
+            return;
+        }
+
+        root = InsertBST(root, InsertValue.Value);
+        await UpdateTreeAsync();
+        InsertValue = null;
+    }
+
+    private TreeNode InsertBST(TreeNode node, int value)
+    {
+        if (node == null) return new TreeNode(value);
+        if (value < node.Value) node.Left = InsertBST(node.Left, value);
+        else if (value > node.Value) node.Right = InsertBST(node.Right, value);
+        return node;
+    }
+
+    private async Task DeleteValueAsync()
+    {
+        if (DeleteValue == null)
+        {
+            await ShowAlert("Vui lòng nhập số hợp lệ");
+            return;
+        }
+
+        root = DeleteNode(root, DeleteValue.Value);
+        await UpdateTreeAsync();
+        DeleteValue = null;
+    }
+
+    private TreeNode DeleteNode(TreeNode node, int value)
+    {
+        if (node == null) return null;
+        if (value < node.Value) node.Left = DeleteNode(node.Left, value);
+        else if (value > node.Value) node.Right = DeleteNode(node.Right, value);
+        else
+        {
+            if (node.Left == null) return node.Right;
+            if (node.Right == null) return node.Left;
+            TreeNode minNode = FindMin(node.Right);
+            node.Value = minNode.Value;
+            node.Right = DeleteNode(node.Right, minNode.Value);
+        }
+        return node;
+    }
+
+    private TreeNode FindMin(TreeNode node)
+    {
+        while (node.Left != null) node = node.Left;
+        return node;
+    }
+
+    private async Task InOrderTraversalAsync()
+    {
+        if (!_initialized) return;
+
+        await JSRuntime.InvokeVoidAsync("resetNodeColors");
+
+        List<int> output = new List<int>();
+        await InOrderTraverse(root, output);
+
+        OutputMessage = "Trung thứ tự: " + string.Join(" -> ", output);
+        StateHasChanged();
+    }
+
+    private async Task InOrderTraverse(TreeNode node, List<int> output)
+    {
+        if (node == null) return;
+        await InOrderTraverse(node.Left, output);
+
+        output.Add(node.Value);
+        await JSRuntime.InvokeVoidAsync("highlightNode", node.Value, "#ffc107");
+        await Task.Delay(600); // delay mỗi bước
+
+        await InOrderTraverse(node.Right, output);
+    }
+
+    private async Task CheckBalanceAsync()
+    {
+        if (!_initialized) return;
+
+        await JSRuntime.InvokeVoidAsync("resetNodeColors");
+
+        bool isBalanced = await CheckHeight(root) != -1;
+        OutputMessage = isBalanced ? "Cây cân bằng" : "Cây không cân bằng";
+        StateHasChanged();
+    }
+
+    private async Task<int> CheckHeight(TreeNode node)
+    {
+        if (node == null) return 0;
+
+        await JSRuntime.InvokeVoidAsync("highlightNode", node.Value, "#20c997");
+        await Task.Delay(600);
+
+        int leftHeight = await CheckHeight(node.Left);
+        int rightHeight = await CheckHeight(node.Right);
+
+        bool isUnbalanced = leftHeight == -1 || rightHeight == -1 || Math.Abs(leftHeight - rightHeight) > 1;
+        if (isUnbalanced)
+        {
+            await JSRuntime.InvokeVoidAsync("highlightNode", node.Value, "#dc3545");
+            await Task.Delay(600);
+            return -1;
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("highlightNode", node.Value, "#20c997");
+            return Math.Max(leftHeight, rightHeight) + 1;
+        }
+    }
+
+    private async Task SearchValueAsync()
+    {
+        if (!_initialized) return;
+
+        if (SearchValue == null)
+        {
+            await ShowAlert("Vui lòng nhập số hợp lệ");
+            return;
+        }
+
+        await JSRuntime.InvokeVoidAsync("resetNodeColors");
+
+        TreeNode current = root;
+        while (current != null)
+        {
+            await JSRuntime.InvokeVoidAsync("highlightNode", current.Value, "#ffc107");
+            await Task.Delay(600);
+
+            if (current.Value == SearchValue.Value)
+            {
+                OutputMessage = $"Tìm thấy giá trị {SearchValue.Value}";
+                StateHasChanged();
+                return;
+            }
+
+            current = SearchValue.Value < current.Value ? current.Left : current.Right;
+        }
+
+        OutputMessage = $"Không tìm thấy giá trị {SearchValue.Value}";
+        SearchValue = null;
+        StateHasChanged();
+    }
+
+    private async Task UpdateTreeAsync()
+    {
+        if (!_initialized) return;
+
+        await JSRuntime.InvokeVoidAsync("clearNetwork");
+        await TraverseForVisualization(root);
+        await JSRuntime.InvokeVoidAsync("renderNetwork");
+    }
+
+    private async Task TraverseForVisualization(TreeNode node, int? parentId = null)
+    {
+        if (node == null) return;
+
+        await JSRuntime.InvokeVoidAsync("addNode", node.Value);
+
+        if (parentId != null)
+        {
+            await JSRuntime.InvokeVoidAsync("addEdge", parentId, node.Value);
+        }
+
+        await TraverseForVisualization(node.Left, node.Value);
+        await TraverseForVisualization(node.Right, node.Value);
+    }
+
+    private async Task GenerateRandomTree()
+    {
+        if (!_initialized) return;
+
+        root = null;
+        List<int> values = new List<int>();
+
+        for (int i = 0; i < 8; i++)
+        {
+            int value = random.Next(10, 100);
+            values.Add(value);
+            root = InsertBST(root, value);
+        }
+
+        await UpdateTreeAsync();
+        OutputMessage = "Cây random: " + string.Join(", ", values);
+        StateHasChanged();
+    }
+
+    private async Task ShowAlert(string message)
+    {
+        if (_initialized)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", message);
+        }
+    }
+}
+
+@inject IJSRuntime JSRuntime

@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FluxorSort.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FluxorSort.jcihixxr9t.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\binary-tree.js",
+      "PackagePath": "staticwebassets\\binary-tree.js"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\duyet.js",
+      "PackagePath": "staticwebassets\\duyet.js"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\graph_path.js",
+      "PackagePath": "staticwebassets\\graph_path.js"
+    },
+    {
+      "Id": "E:\\zzz_coding\\prj_asp_algorithm\\FluxorSort-20250418T040535Z-001\\FluxorSort\\wwwroot\\hash.css",
+      "PackagePath": "staticwebassets\\hash.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FluxorSort.props",
+      "PackagePath": "build\\FluxorSort.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FluxorSort.props",
+      "PackagePath": "buildMultiTargeting\\FluxorSort.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FluxorSort.props",
+      "PackagePath": "buildTransitive\\FluxorSort.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

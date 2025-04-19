@@ -1,0 +1,10 @@
+﻿
+@using FluxorSort.Features.Sorting.Types
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+<select class="form-select-sm btn-outline-secondary" @onchange="UpdateSorterType">
+    @foreach (var option in Enum.GetValues(typeof(SorterType)))
+    {
+        <option value="@option" selected="@(option.Equals(SorterState.Value.SorterType))">@option</option>
+    }
+</select>

@@ -1,0 +1,141 @@
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\FluxorSort.staticwebassets.runtime.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\FluxorSort.exe
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\FluxorSort.deps.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\FluxorSort.runtimeconfig.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\FluxorSort.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\FluxorSort.pdb
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Fluxor.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Fluxor.Blazor.Web.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.AssemblyReference.cache
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.AssemblyInfoInputs.cache
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.AssemblyInfo.cs
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.sourcelink.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.build.FluxorSort.props
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FluxorSort.props
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FluxorSort.props
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\scopedcss\Features\Sorting\Components\SortingArray.razor.rz.scp.css
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\scopedcss\Features\Sorting\SortingPage.razor.rz.scp.css
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\scopedcss\bundle\FluxorSort.styles.css
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\scopedcss\projectbundle\FluxorSort.bundle.scp.css
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.Up2Date
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\refint\FluxorSort.dll
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.pdb
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\FluxorSort.genruntimeconfig.cache
+C:\Users\Admin\Music\FluxorSort\FluxorSort\obj\Debug\net8.0\ref\FluxorSort.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\appsettings.Development.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\appsettings.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.staticwebassets.runtime.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.staticwebassets.endpoints.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.exe
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.deps.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.runtimeconfig.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.pdb
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Fluxor.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Fluxor.Blazor.Web.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.AssemblyReference.cache
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.AssemblyInfoInputs.cache
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.AssemblyInfo.cs
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.CoreCompileInputs.cache
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.MvcApplicationPartsAssemblyInfo.cache
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Features\Sorting\Components\SortingArray.razor.rz.scp.css
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Features\Sorting\SortingPage.razor.rz.scp.css
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\bundle\FluxorSort.styles.css
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\projectbundle\FluxorSort.bundle.scp.css
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.build.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.development.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.build.FluxorSort.props
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FluxorSort.props
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FluxorSort.props
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.Up2Date
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\refint\FluxorSort.dll
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.pdb
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.genruntimeconfig.cache
+C:\Codethue\C Sharp\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\ref\FluxorSort.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\appsettings.Development.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\appsettings.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.staticwebassets.endpoints.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.staticwebassets.runtime.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.exe
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.deps.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.runtimeconfig.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\FluxorSort.pdb
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Fluxor.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Fluxor.Blazor.Web.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\bin\Debug\net8.0\Microsoft.JSInterop.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.AssemblyReference.cache
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.GeneratedMSBuildEditorConfig.editorconfig
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.AssemblyInfoInputs.cache
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.AssemblyInfo.cs
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.CoreCompileInputs.cache
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.MvcApplicationPartsAssemblyInfo.cache
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Features\Sorting\Components\SortingArray.razor.rz.scp.css
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\Features\Sorting\SortingPage.razor.rz.scp.css
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\bundle\FluxorSort.styles.css
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\scopedcss\projectbundle\FluxorSort.bundle.scp.css
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.build.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.development.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssets.props
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.FluxorSort.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.build.FluxorSort.props
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FluxorSort.props
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FluxorSort.props
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.pack.json
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.csproj.Up2Date
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\refint\FluxorSort.dll
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.pdb
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\FluxorSort.genruntimeconfig.cache
+E:\zzz_coding\prj_asp_algorithm\FluxorSort-20250418T040535Z-001\FluxorSort\obj\Debug\net8.0\ref\FluxorSort.dll

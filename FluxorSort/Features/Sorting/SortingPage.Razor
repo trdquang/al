@@ -1,0 +1,26 @@
+﻿@page "/sorting"
+@using FluxorSort.Features.Sorting.Components
+@inherits  Fluxor.Blazor.Web.Components.FluxorComponent
+
+@namespace FluxorSort.Features.Sorting
+
+<PageTitle>Sorting</PageTitle>
+
+<h1>Sorting</h1>
+
+<div class="button-header">
+    @if (SorterState!.Value.IsSorting)
+    {
+        <button class="btn btn-primary" @onclick="Pause">Pause</button>
+    }
+    else
+    {
+        <button class="btn btn-primary" @onclick="Sort">Sort</button>
+    }
+    <button class="btn btn-primary" @onclick="Shuffle" disabled="@SorterState.Value.IsSorting">Shuffle</button>
+    <SorterSelector/>
+</div>
+
+<p>
+    <SortingArray Array="@SorterState!.Value.Array" />
+</p>

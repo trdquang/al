@@ -1,0 +1,316 @@
+﻿@page "/graph-traversal"
+@inject IJSRuntime JS
+
+<h2 class="text-center mb-4">Demo Duyệt BFS / DFS từ Danh sách Cạnh</h2>
+
+<div class="mb-3">
+    <label class="form-label">Nhập danh sách cạnh (ví dụ: A B):</label>
+    <textarea class="form-control" @bind="edgeInput" rows="5" placeholder="A B&#10;A C&#10;B D&#10;C E&#10;E F"></textarea>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <input type="text" @bind="startNode" class="form-control" placeholder="Đỉnh bắt đầu (VD: A)" />
+    </div>
+    <div class="col-md-4">
+        <select class="form-select" @bind="traversalType">
+            <option value="bfs">BFS (Duyệt theo chiều rộng)</option>
+            <option value="dfs">DFS (Duyệt theo chiều sâu)</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <select class="form-select" @bind="graphType">
+            <option value="undirected">Đồ thị vô hướng</option>
+            <option value="directed">Đồ thị có hướng</option>
+        </select>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <button class="btn btn-primary w-100" @onclick="BuildAndRunTraversal">Tạo đồ thị & Chạy duyệt</button>
+    </div>
+</div>
+
+<div id="graphContainer" style="height: 400px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 20px;"></div>
+
+<div class="card">
+    <div class="card-body">
+        <h5>Kết quả duyệt:</h5>
+        <p>@bfsOutput</p>
+        <pre>@vertexInfo</pre>
+        <p>@cycleOutput</p>
+    </div>
+</div>
+
+@code {
+    private string edgeInput = "A B\nA C\nB D\nC E\nE F";
+    private string startNode = "A";
+    private string traversalType = "bfs";
+    private string graphType = "undirected";
+
+    private Dictionary<string, List<string>> graph = new();
+    private Dictionary<string, int> inDegree = new();
+    private Dictionary<string, int> outDegree = new();
+
+    private string bfsOutput = "Chưa chạy.";
+    private string vertexInfo = "";
+    private string cycleOutput = "Không có chu trình.";
+
+    private async Task BuildAndRunTraversal()
+    {
+        graph.Clear();
+        inDegree.Clear();
+        outDegree.Clear();
+        bfsOutput = "";
+        vertexInfo = "";
+        cycleOutput = "";
+
+        bool isDirected = graphType == "directed";
+
+        var lines = edgeInput.Split('\n', StringSplitOptions.RemoveEmptyEntries);
+        foreach (var line in lines)
+        {
+            var parts = line.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length != 2) continue;
+            var from = parts[0];
+            var to = parts[1];
+
+            if (!graph.ContainsKey(from)) graph[from] = new();
+            if (!graph.ContainsKey(to)) graph[to] = new();
+
+            graph[from].Add(to);
+            if (!isDirected)
+            {
+                graph[to].Add(from);
+            }
+            else
+            {
+                inDegree[to] = inDegree.GetValueOrDefault(to) + 1;
+                outDegree[from] = outDegree.GetValueOrDefault(from) + 1;
+            }
+        }
+
+        List<string> result = traversalType == "bfs" ? RunBfs(startNode) : RunDfs(startNode);
+        bfsOutput = result.Count > 0 ? string.Join(" ", result) : "Không duyệt được.";
+
+        if (isDirected)
+        {
+            foreach (var node in graph.Keys)
+            {
+                vertexInfo += $"Đỉnh {node}: Bán bậc vào = {inDegree.GetValueOrDefault(node, 0)}, Bán bậc ra = {outDegree.GetValueOrDefault(node, 0)}\n";
+            }
+        }
+        else
+        {
+            foreach (var node in graph.Keys)
+            {
+                vertexInfo += $"Đỉnh {node}: Bậc = {graph[node].Count}\n";
+            }
+        }
+
+        var cycle = isDirected ? DetectCycleDirected() : DetectCycleUndirected();
+        if (cycle != null && cycle.Any())
+        {
+            cycleOutput = "Chu trình phát hiện: " + string.Join(" → ", cycle);
+        }
+
+        await JS.InvokeVoidAsync("drawGraph", graph, isDirected);
+        await JS.InvokeVoidAsync("highlightPath", result);
+    }
+
+    private List<string> RunBfs(string start)
+    {
+        var visited = new HashSet<string>();
+        var queue = new Queue<string>();
+        var result = new List<string>();
+
+        if (!graph.ContainsKey(start)) return result;
+
+        queue.Enqueue(start);
+        visited.Add(start);
+
+        while (queue.Count > 0)
+        {
+            var node = queue.Dequeue();
+            result.Add(node);
+
+            foreach (var neighbor in graph[node])
+            {
+                if (visited.Add(neighbor))
+                {
+                    queue.Enqueue(neighbor);
+                }
+            }
+        }
+
+        return result;
+    }
+
+    private List<string> RunDfs(string start)
+    {
+        var visited = new HashSet<string>();
+        var result = new List<string>();
+
+        void Dfs(string node)
+        {
+            visited.Add(node);
+            result.Add(node);
+
+            foreach (var neighbor in graph[node])
+            {
+                if (!visited.Contains(neighbor))
+                {
+                    Dfs(neighbor);
+                }
+            }
+        }
+
+        if (graph.ContainsKey(start))
+        {
+            Dfs(start);
+        }
+
+        return result;
+    }
+
+    private List<string> DetectCycleDirected()
+    {
+        var visited = new HashSet<string>();
+        var recStack = new HashSet<string>();
+        var path = new List<string>();
+
+        bool Dfs(string node)
+        {
+            visited.Add(node);
+            recStack.Add(node);
+            path.Add(node);
+
+            foreach (var neighbor in graph[node])
+            {
+                if (!visited.Contains(neighbor) && Dfs(neighbor)) return true;
+                if (recStack.Contains(neighbor))
+                {
+                    path.Add(neighbor);
+                    return true;
+                }
+            }
+
+            recStack.Remove(node);
+            path.RemoveAt(path.Count - 1);
+            return false;
+        }
+
+        foreach (var node in graph.Keys)
+        {
+            if (!visited.Contains(node))
+            {
+                path.Clear();
+                if (Dfs(node)) return path;
+            }
+        }
+
+        return null;
+    }
+
+    private List<string> DetectCycleUndirected()
+    {
+        var visited = new HashSet<string>();
+        var path = new List<string>();
+
+        bool Dfs(string node, string parent)
+        {
+            visited.Add(node);
+            path.Add(node);
+
+            foreach (var neighbor in graph[node])
+            {
+                if (!visited.Contains(neighbor))
+                {
+                    if (Dfs(neighbor, node)) return true;
+                }
+                else if (neighbor != parent)
+                {
+                    path.Add(neighbor);
+                    return true;
+                }
+            }
+
+            path.RemoveAt(path.Count - 1);
+            return false;
+        }
+
+        foreach (var node in graph.Keys)
+        {
+            if (!visited.Contains(node))
+            {
+                path.Clear();
+                if (Dfs(node, null)) return path;
+            }
+        }
+
+        return null;
+    }
+}
+
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script>
+    window.drawGraph = (graph, isDirected) => {
+        const nodeSet = new Set();
+        const nodes = [];
+        const edges = [];
+
+        for (const from in graph) {
+            if (!nodeSet.has(from)) {
+                nodes.push({ id: from, label: from });
+                nodeSet.add(from);
+            }
+
+            for (const to of graph[from]) {
+                if (!nodeSet.has(to)) {
+                    nodes.push({ id: to, label: to });
+                    nodeSet.add(to);
+                }
+                edges.push({ from, to });
+            }
+        }
+
+        const container = document.getElementById("graphContainer");
+        const data = {
+            nodes: new vis.DataSet(nodes),
+            edges: new vis.DataSet(edges)
+        };
+        const options = {
+            nodes: {
+                shape: 'dot',
+                size: 20,
+                color: '#0d6efd',
+                font: { color: '#000', size: 16 }
+            },
+            edges: {
+                color: '#999',
+                arrows: isDirected ? { to: { enabled: true } } : undefined
+            },
+            physics: { enabled: true, stabilization: { iterations: 200 } }
+        };
+
+        window.visNetworkInstance = new vis.Network(container, data, options);
+    };
+
+    window.highlightPath = (path) => {
+        if (!window.visNetworkInstance || !path || path.length === 0) return;
+
+        let i = 0;
+        const interval = setInterval(() => {
+            if (i >= path.length) {
+                clearInterval(interval);
+                return;
+            }
+
+            const update = [{ id: path[i], color: { background: "#ffc107" } }];
+            window.visNetworkInstance.body.data.nodes.update(update);
+
+            i++;
+        }, 500);
+    };
+</script>

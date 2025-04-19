@@ -1,0 +1,9 @@
+﻿
+<div class="columns-container" style="height: @(20 * Array.Count)px">
+    @foreach (var num in Array)
+    {
+    <div class="column" style="height: @(num * 20)px">
+        <div class="column-value"></div>
+    </div>
+    }
+</div>
